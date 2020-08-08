@@ -12,7 +12,9 @@ const forecast = (lat, lon, callback) => {
         else {
             callback(undefined, {
                 Temperature: body.current.temperature,
-                RainChance: body.current.precip
+                RainChance: body.current.precip,
+                image: body.current.weather_icons[0],
+                description: body.current.weather_descriptions[0]
             })
         }
     })

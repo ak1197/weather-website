@@ -40,7 +40,7 @@ app.get('/help',(req,res)=>{
     res.render('help',{
         title:'Help',
         name:'Arunkumar',
-        message:'This page will help you to know your weather forecast'
+        message:'Please provide a valid location name as an input and hit enter to get the appropriate weather data'
     })
 })
 app.get('/weather',(req,res)=>{
